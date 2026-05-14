@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Gateway Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🚀 API Gateway Dashboard</h1>
+            <p>ASP.NET Core v8.0 | Reverse Proxy & Microservice Orchestration</p>
+        </header>
+
+        <section class="status-section">
+            <h2>🔍 Gateway Status</h2>
+            <div id="gateway-status" class="status-card loading">
+                <p>Loading status...</p>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>🔗 Upstream Services</h2>
+            <div id="services-container" class="services-grid">
+                <div class="service-card loading">
+                    <p>Loading services...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>ℹ️ API Information</h2>
+            <div id="api-info" class="info-card">
+                <p>Loading API information...</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>API Gateway | <span id="current-time"></span></p>
+        </footer>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
